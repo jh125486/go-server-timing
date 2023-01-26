@@ -90,7 +90,7 @@ func TestMiddleware(t *testing.T) {
 				}
 
 				// Write date to response body
-				w.Write([]byte(responseBody))
+				_, _ = w.Write([]byte(responseBody))
 			})
 
 			// Perform the request
@@ -153,7 +153,7 @@ func TestMiddleware_writeHeaderNotCalled(t *testing.T) {
 		h.Metrics = metrics
 
 		// Write date to response body WITHOUT calling WriteHeader
-		w.Write([]byte(responseBody))
+		_, _ = w.Write([]byte(responseBody))
 	}), nil))
 	defer ts.Close()
 
