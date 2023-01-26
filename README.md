@@ -1,5 +1,7 @@
 # HTTP Server-Timing for Go
-[![Godoc](https://godoc.org/github.com/mitchellh/go-server-timing?status.svg)](https://godoc.org/github.com/mitchellh/go-server-timing)
+[![Godoc](https://godoc.org/github.com/jh125486/go-server-timing?status.svg)](https://godoc.org/github.com/jh125486/go-server-timing)
+[![golangci-lint](https://github.com/jh125486/go-server-timing/actions/workflows/golangci-lint.yml/badge.svg?branch=main)](https://github.com/jh125486/go-server-timing/actions/workflows/golangci-lint.yml)
+![Coverage](https://img.shields.io/badge/Coverage-81.3%25-brightgreen)
 
 This is a library including middleware for using
 [HTTP Server-Timing](https://www.w3.org/TR/server-timing) with Go. This header
@@ -7,7 +9,7 @@ allows a server to send timing information from the backend, such as database
 access time, file reads, etc. The timing information can be then be inspected
 in the standard browser developer tools:
 
-![Server Timing Example](https://raw.githubusercontent.com/mitchellh/go-server-timing/master/example/screenshot.png)
+![Server Timing Example](https://raw.githubusercontent.com/jh125486/go-server-timing/master/example/screenshot.png)
 
 ## Features
 

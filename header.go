@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/golang/gddo/httputil/header"
+	"github.com/jh125486/go-server-timing/httputil/header"
 )
 
 // HeaderKey is the specified key for the Server-Timing header.
